@@ -1,0 +1,54 @@
+#mainContainer {
+    background: linear-gradient(#dc9d62 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
+}
+
+#blackboard {    
+    position: absolute;
+    top: 1em;
+    left: 50%;
+    width: 600px;
+    height: 300px;
+    background: #21561E;
+    border: solid 4px white;
+    transform: translate(-50%, 0);
+    font-family: Crayon, comic sans ms;
+    font-size: 24px;
+    color: white;
+}
+
+#desk {
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    width: 350px;
+    height: 160px;
+    transform: translate(-50%, -45%);
+    background: linear-gradient(rgb(56, 35, 19) -5%, rgb(129, 84, 47) 10%);
+}
+
+#deskTableTop {
+    position: absolute;
+    top: -0.8em;
+    height: 0.8em;
+    width: 120%;
+    left: 50%;
+    transform: translate(-50%);
+    background: inherit;
+}
+
+#deskSign {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px gray;
+    background: rgb(207, 207, 207);
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+}
+
+#deskSign > h3 {
+    padding: 0;
+    margin: 0;
+}

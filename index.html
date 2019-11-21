@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <title>LHS Universitet Entree</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="public/stylesheet/felles.css">
+        <link rel="stylesheet" type="text/css" href="public/stylesheet/index.css">
+    </head>
+    <body>
+        <main id="mainContainer">
+            
+            <!-- Container for huset til Jonny -->
+            <div>
+                <img id="houseJonny" src="public/images/Index/HusJonny.png" alt="houseJonny">
+                <img id="signLeft" src="public/images/Index/skylt1.png" alt="signLeft">
+                <img id="signRight" src="public/images/Index/skylt2.png" alt="signRight">
+
+                <!-- Animerade divs från murpipen till Jonnys hus -->
+                <div class="smokeHouseJonny">
+                    <div id="smokeHouseJonny_1"></div>
+                    <div id="smokeHouseJonny_2"></div>
+                    <div id="smokeHouseJonny_3"></div>
+                    <div id="smokeHouseJonny_4"></div>
+                    <div id="smokeHouseJonny_5"></div>
+                </div>
+                
+                <!-- Link till neste side: Charter -->
+                <a href="Charter.html">
+                    <img id="doorJonny" src="public/images/Index/Door.png" alt="doorJonny">
+                </a>
+                
+                <!-- Animerade bilder runt Jonnys hus-->
+                <img id="trashSmell_1" src="public/images/Index/smoke.svg" alt="trash smell1">
+                <img id="trashSmell_2" src="public/images/Index/smoke.svg" alt="trash smell2">
+                <img id="trashSmell_3" src="public/images/Index/smoke.svg" alt="trash smell3">
+                <img id="fly_1" src="public/images/Index/Fluga.png" alt="fly1">
+                <img id="fly_2" src="public/images/Index/Fluga.png" alt="fly2">
+                <img id="fly_3" src="public/images/Index/Fluga.png" alt="fly3">
+                <img id="fly_4" src="public/images/Index/Fluga.png" alt="fly4">
+                <img id="fly_5" src="public/images/Index/Fluga.png" alt="fly5">
+                <img id="fly_6" src="public/images/Index/Fluga.png" alt="fly6">
+                <img id="rat_1" src="public/images/Index/Rat.png" alt="rat1">
+                <img class="rat2and3" id="rat_2" src="public/images/Index/Rat.png" alt="rat2">
+                <img class="rat2and3" id="rat_3" src="public/images/Index/Rat.png" alt="rat3">
+            </div>
+
+            <!-- Venster hus i scenen -->
+            <div id="houseLeft">
+                <div id="houseLeftRoof"></div>
+                <img id="houseLeftWindow_1" src="public/images/Index/Fonster.png" alt="windowLeft">
+                <img id="houseLeftWindow_2" src="public/images/Index/Fonster.png" alt="windowLeft">
+            </div>
+
+            <!-- Høyre hus i scenen -->
+            <div id="houseRight">
+                <div id="houseRightRoof"></div>
+                <img id="houseRightWindow_1" src="public/images/Index/Fonster.png" alt="windowRight1">
+                <img id="houseRightWindow_2" src="public/images/Index/Fonster.png" alt="windowRight2">
+            </div>
+            
+            <!-- Vegen i bunn av scenen -->
+            <div id="road">
+                <div id="roadLine"></div>
+            </div>
+
+            <!-- Politi bil container -->
+            <div id="copCarContainer">
+                    <img id="copCar" src="public/images/Index/PolitiBil.png" alt="copCar">
+                    <img id="copCarWheelLeft" src="public/images/Index/PolitiBilHjul.png" alt="wheelLeft">
+                    <img id="copCarWheelRight" src="public/images/Index/PolitiBilHjul.png" alt="wheelRight">
+            </div>
+            
+            <!-- Label for snakkebobble till Jonny -->
+            <label for="speechBubbleInput_1">
+                <!-- Bilde av Jonny -->
+                <img id="jonny" src="public/images/jonny/jonny.png" alt="jonny">
+            </label>
+        
+            <!-- Snakkebobble till Jonny -->
+            <section id="speechBubbleContainer_1">
+                <input id="speechBubbleInput_1" name="sectionContainer" type="radio" />
+                <section id="speechBubble_1" class="speechBubble bottomLeft hiddenSection">
+    
+                    <!-- boble 1 -->
+                    <input id="bubbleTextInput_11" name="bubbleText_1" type="radio" checked>
+                    <section id="bubbleText_11" class="bubbleText">
+                        <div>Hei! Mitt navn er Jonny og jeg er rektor på Livets harde skole.</div>
+                        <label for="bubbleTextInput_12" class="nextBubble"> >>> </label>
+                    </section>
+    
+                    <!-- boble 2 -->
+                    <input id="bubbleTextInput_12" name="bubbleText_1" type="radio">
+                    <section id="bubbleText_12" class="bubbleText">
+                        <div>Hele min kompetanse stammer fra egne erfaringer og magefølelse.</div>
+                        <label for="bubbleTextInput_13" class="nextBubble"> >>> </label>
+                    </section>
+    
+                    <!-- boble 3 -->
+                    <input id="bubbleTextInput_13" name="bubbleText_1" type="radio">
+                    <section id="bubbleText_13" class="bubbleText">
+                        <div>I dag skal jeg guide deg gjennom Livets harde skole.</div>
+                        <div>Denne utdanningen er den viktigste du kan ha i livet!</div>
+                        <label for="bubbleTextInput_14" class="nextBubble"> >>> </label>
+                    </section>
+    
+                    <!-- boble 4 -->
+                    <input id="bubbleTextInput_14" name="bubbleText_1" type="radio">
+                    <section id="bubbleText_14" class="bubbleText">
+                        <div>Klikk på døra for å starte!</div>
+                    </section>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

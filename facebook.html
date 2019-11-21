@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <title>Facebook og Nettvett</title>
+    <meta charset="utf-8">
+    <link href="public/stylesheet/felles.css" rel="stylesheet" type="text/css">
+    <link href="public/stylesheet/klasserom.css" rel="stylesheet" type="text/css">
+    <link href="public/stylesheet/facebook.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main id="mainContainer">
+        <!-- Bakgrund animasjons kontainer -->
+        <section id="backgroundWall">
+            <!-- Musehull -->
+            <img id="mouseHole" src="public/images/facebook/mouseHole.png" alt="Mouse Hole">
+            <img id="fbRat" src="public/images/facebook/rat.png" alt="rat">
+        </section>
+
+        <!-- Pult -->
+        <div id="facebookDesk"></div>
+
+        <!-- Tavle + innhold på tavle -->
+        <div id="blackboard">
+            <h4>Regler ved livets harde skole</h4>
+            <ol>
+                <li>Snakk alltid om livets harde skole.</li>
+                <li>Forskning du ikke er enig i er fake news.</li>
+                <li>Forskning du ikke forstår er fake news.</li>
+                <li>Meningsmålinger der ditt syn vinner er ekte.</li>
+                <li>Meningsmålinger der ditt syn ikke vinner er <br>bestillingsverk og fake news.</li>
+            </ol>
+        </div>
+
+        <!-- Dørmatte -->
+        <a href="klima.html">
+            <div id="doormat">
+                <div id="doormatText">EXIT</div>
+            </div>
+        </a>
+
+        <!-- Jonny -->
+        <div id="jonnyAnimationDiv">
+            <img id="jonnyImg" src="public/images/jonny/jonny.png" alt="Jonny">
+        </div>
+
+        <!-- Snakkeboble -->
+        <div id="speechBubble_1" class="speechBubble bottomRight">
+            Her kan du lære hvordan du skal oppføre deg i kommentarfeltet på facebook. Klikk på en av knappene for
+            å prøve! <br> - Klikk på dørmatta for å gå videre til neste kurs.
+        </div>
+
+        <!-- PC -->
+        <section id="computer">
+            <div id="computerDisplay"></div>
+            <div id="computerFoot1"></div>
+            <div id="computerFoot2"></div>
+            <div id="webcam"></div>
+        </section>
+
+        <!-- innhold på PC skjerm -->
+        <div id="brokenComputerScreen">
+            <img id="loading" src="public/images/facebook/loadingGif.gif" alt="Loading">
+        </div>
+
+        <section id="computerScreen">
+            <!-- Facebook nav bar -->
+            <div id="facebookMenu">
+                <div id="facebookLogo">
+                    <div id="facebookF">f</div>
+                </div>
+                <div id="searchBar"> <span id="searchTxt">Search..</span>
+                    <img id="searchIcon" src="public/images/facebook/magnifyingGlass.png" alt="Search Icon">
+                </div>
+                <img id="fbIcons" src="public/images/facebook/fbMenu.png" alt="Facebook Icons">
+            </div>
+
+            <div id="gretaArticle">
+                <img id="gretaImg" src="public/images/facebook/greta.png" alt="Greta Thunberg">
+                <div id="articleLinkTxt">NRK.no</div>
+                <h3 id="articleHeading">Greta(16) skulker skolen for klimaet</h3>
+            </div>
+
+            <section class="commentSection">
+                <div id="newComment">Skriv en kommentar... </div>
+                <div class="sendButton">⌲</div>
+
+                <!-- Første facebook seksjon -->
+                <input id="button_1" name="fbComment" type="radio" />
+                <section id="fbSection_1" class="fbSection">
+                    <div class="facebookComment">
+                        <h3 class="facebookName">Laila Syversen </h3>
+                        Jeg sluttet personlig å kjøpe plastikkposer i matbutikken for flere år siden. Hva med at dere andre også bidrar til å forbedre klimaet?
+                        <h3 class="facebookActions">Like · Reply · <span class="commentMinutes">3h</span></h3>
+                    </div>
+                    <div id="hugoHansenComment" class="facebookComment">
+                        <h3 class="facebookName">Hugo Hansen</h3>
+                        Norge er aldri verstingen!! Se på hvor mye alle andre land forurenser, så må vi få en del av skylden for at kloden vår forurenses? Patetisk!!
+                        <h3 class="facebookActions">Like · Reply · <span class="commentMinutes">48m</span></h3>
+                    </div>
+                    <div class="jonnyComment">
+                        Jeg er svært uenig i alt dette kvinnemennesket sier. Det er slik jeg er, så dere må bare leve med det!
+                    </div>
+                    <div class="sendButton">⌲</div>
+                </section>
+
+                <!-- Andre facebook seksjon -->
+                <input id="button_2" name="fbComment" type="radio" />
+                <section id="fbSection_2" class="fbSection">
+                    <div class="facebookComment">
+                        <h3 class="facebookName">Kenneth Jørgensen</h3>
+                        Har ikke noe annet å si enn at dette er det dummeste jeg noen gang har hørt. Det finnes ikke noe som heter klimakrisen.
+                        <h3 class="facebookActions">Like · Reply · <span class="commentMinutes">8h</span></h3>
+                    </div>
+                    <div class="jonnyComment">
+                        Jeg er kanskje ikke forsker, men jeg har nok vett i hodet til å vite at denne jenta tar feil.
+                    </div>
+                    <div class="sendButton">⌲</div>
+                </section>
+
+                <!-- Tredje facebook seksjon -->
+                <input id="button_3" name="fbComment" type="radio" />
+                <section id="fbSection_3" class="fbSection">
+                    <div class="facebookComment">
+                        <h3 class="facebookName">Hugo Hansen</h3>
+                        Stakkars hjernevaskede jentunge.
+                        <h3 class="facebookActions">Like · Reply · <span class="commentMinutes">10h</span></h3>
+                    </div>
+                    <div id="sylviComment" class="facebookComment">
+                        <h3 class="facebookName">Sylvi Listhaug</h3>
+                        Her må barnevernet steppe inn med en gang!
+                        <div class="facebookActions">Like · Reply · <span class="commentMinutes">8m</span></div>
+                    </div>
+                    <div class="jonnyComment">
+                        Ungdommen i dag vet ikke hva de snakker om. Hold dere ved skolepulten og kom tilbake når dere har fått litt livserfaring!
+                    </div>
+                    <div class="sendButton">⌲</div>
+                </section>
+
+                <!-- Fjerde facebook seksjon -->
+                <input id="button_4" name="fbComment" type="radio" />
+                <section id="fbSection_4" class="fbSection">
+                    <div class="facebookComment">
+                        <h3 class="facebookName">Rune André Berg</h3>
+                        Jeg er tidligere elev ved livets harde skole, og klimakrisen er bare tull. Disse politikerne prøver å distrahere oss fra å fokusere på de viktige problemene her i landet!
+                        <h3 class="facebookActions">Like · Reply · <span class="commentMinutes">2h</span></h3>
+                    </div>
+                    <div id="ruthComment" class="facebookComment">
+                        <h3 class="facebookName">Ruth Narvestad</h3>
+                        FNS klimapanels eneste hensikt er å få en politisk agenda til å se ut som forskning. Forskningen gir ikke mening, klimakrisen er fake news.
+                        <h3 class="facebookActions">Like · Reply · <span class="commentMinutes">27m</span></h3>
+                    </div>
+                    <div class="jonnyComment">
+                        Selv mener jeg er klimakrisen er tidenes konspirasjon. Pengesugne klimaforskere og hysteriske miljøvernere har klart å overbevise oss om en sannhet som bare er tull og tøys.
+                    </div>
+                    <div class="sendButton">⌲</div>
+                </section>
+            </section>
+        </section>
+
+        <!-- Knapper -->
+        <section id="buttons">
+            <!-- Knapp nr. 1-->
+            <label for="button_1" id="firstButton" class="buttonsClass">
+                <img class="commentBtnIcon" src="public/images/facebook/commentIcon.png" alt="comment">
+                <span id="commentBtnText">Skyld på andre</span>
+            </label>
+
+            <!-- Knapp nr. 2-->
+            <label for="button_2" id="secondButton" class="buttonsClass">
+                <img class="commentBtnIcon" src="public/images/facebook/commentIcon.png" alt="comment">
+                <span>Kveruler</span>
+            </label>
+
+            <!-- Knapp nr. 3 -->
+            <label for="button_3" id="thirdButton" class="buttonsClass">
+                <img class="commentBtnIcon" src="public/images/facebook/commentIcon.png" alt="comment">
+                <span class="buttonsText">Snakk nedlatende om ungdommen</span>
+            </label>
+
+            <!-- Knapp nr. 4 -->
+            <label for="button_4" id="fourthButton" class="buttonsClass">
+                <img class="commentBtnIcon" src="public/images/facebook/commentIcon.png" alt="comment">
+                <span class="buttonsText">Påstå at klimakrisen er en konspirasjon</span>
+            </label>
+        </section>
+
+    </main>
+</body>
+
+</html>

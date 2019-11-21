@@ -1,0 +1,584 @@
+li {
+    font-size: 22px;
+}
+
+#mainContainer {
+    background: linear-gradient(#CFC5B3 51%, white 51%, white 54%, rgb(30, 30, 88) 54%, #333369 60%);
+}
+ 
+/* Stilsett + animasjon av rotte
+---------------------------------------------------- */
+#mouseHole {
+    position: absolute;
+    width: 60px;
+    top: 343px;
+    right: 400px;
+}
+
+#fbRat {
+    width: 20px;
+    position: absolute;
+    top: 370px;
+    right: 411px;
+    opacity: 0;
+    transform: scaleX(-1);
+    animation-name: ratAnimation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+
+@keyframes ratAnimation {
+    0% {opacity: 0;}
+    10% {opacity: 1; right: 405px;}
+    30% {opacity: 1; right: 400px;}
+    45% {opacity: 1; right: 411px;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+/* Elementer i bakgrunn 
+---------------------------------------------------- */
+#blackboard {    
+    padding: 1em;
+    width: 700px;
+    height: 300px;
+    left: 90%;
+    top: -10px;
+}
+
+#doormat {
+    position: absolute;
+    left: 1100px;
+    top: 450px;
+    width: 150px;
+    height: 200px;
+    transform: skew(30deg);
+    background: #A5712E;
+    border: 10px solid #926429;
+    box-shadow: 10px 10px 30px 10px #2C2C5B;
+  }
+
+#doormat:hover {
+    transform: scale(1.05) skew(30deg);
+}
+
+#doormatText {
+    margin-top: 34px;
+    color: white;
+    transform: rotate(90deg);
+    font-size: 80px;
+    font-family: sans-serif;
+}
+
+/* Stilsett av Jonny + animasjon
+---------------------------------------------------- */
+#jonnyAnimationDiv {
+    position: absolute;
+    top: 130px;
+    right: -200px;
+    width: 150px;
+    height: 200px;
+    animation-name: jonnyAnimation;
+    animation-duration: 25s;
+    animation-direction: normal;
+}
+
+@keyframes jonnyAnimation {
+    0% {top: 130px; right: -200px; transform: rotateY(0deg);}
+    1% {top: 110px;}
+    2% {top: 130px}
+    3% {top: 110px}
+    4% {top: 130px}
+    5% {top: 110px;}
+    6% {top: 130px}
+    7% {top: 110px}
+    8% {top: 130px}
+    9% {top: 110px;}
+    10% {top: 130px}
+    11% {top: 110px}
+    12% {top: 130px}
+    13% {top: 110px}
+    14% {top: 130px}
+    15% {top: 110px;}
+    16% {top: 130px}
+    17% {top: 110px}
+    18% {top: 130px}
+    19% {top: 110px;}
+    20% {top: 130px; right: 130px;}
+    75% {transform: rotateY(0deg);}
+    80% {top: 130px; right: 130px; transform: rotateY(180deg);}
+    81% {top: 110px;}
+    82% {top: 130px}
+    83% {top: 110px}
+    84% {top: 130px}
+    85% {top: 110px;}
+    86% {top: 130px}
+    87% {top: 110px}
+    88% {top: 130px}
+    89% {top: 110px;}
+    90% {top: 130px}
+    91% {top: 110px}
+    92% {top: 130px}
+    93% {top: 110px}
+    94% {top: 130px}
+    95% {top: 110px;}
+    96% {top: 130px}
+    97% {top: 110px}
+    98% {top: 130px}
+    99% {top: 110px;}
+    100% {top: 130px; right: -200px; transform: rotateY(180deg);}
+}
+
+#jonnyImg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 150px;
+    transform: scaleX(-1);
+}
+
+/* Snakkeboble +
+---------------------------------------------------- */
+#speechBubble_1 {
+    position: absolute;
+    top: 70px;
+    right: 300px;
+    width: 200px;
+    opacity: 0;
+    animation-name: speechBubbleAnimation;
+    animation-duration: 25s;
+    animation-direction: normal;
+}
+
+@keyframes speechBubbleAnimation {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    25% {opacity: 1;}
+    75% {opacity: 1;}
+    80% {opacity: 0;}
+}
+
+/* Skrivebord 
+---------------------------------------------------- */
+#facebookDesk {
+    position: relative;
+    margin-bottom: 0px;
+    border-bottom: 200px solid #E5CB9C;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    height: 520px;
+    width: 800px;
+    z-index: 0;
+  }
+
+/* Stilsett av pc 
+---------------------------------------------------- */
+#computer {
+    position: absolute;
+    width: 710px;
+    height: 550px;
+    top: 30px;
+    left: 30px;
+}
+
+#brokenComputerScreen {
+position: absolute;
+top: 60px;
+left: 60px;
+width: 650px;
+height: 400px;
+opacity: 0;
+background-color: black;
+z-index: 10;
+animation-name: brokenComputerAnimation;
+animation-duration: 20s;
+animation-iteration-count: infinite;
+animation-direction: normal;
+}
+
+#loading {
+    position: absolute;
+    top: 185px;
+    left: 310px;
+    width: 30px;
+}
+
+@keyframes brokenComputerAnimation {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    20.1% {opacity: 1;}
+    20.5% {opacity: 1;}
+    20.6% {opacity: 0;}
+    21% {opacity: 1;}
+    22% {opacity: 1;}
+    22.1% {opacity: 0;}
+    30% {opacity: 0;}
+    30.1% {opacity: 1;}
+    38% {opacity: 1;}
+    38.1% {opacity: 0;}
+
+} 
+
+#computerDisplay {
+    position: absolute;
+    width: 650px;
+    height: 400px;
+    background: #EFEFEF;
+    border-radius: 30px;
+    border-top: 30px solid #333333;
+    border-left: 30px solid #333333;
+    border-bottom: 30px solid #202020;
+    border-right: 30px solid #202020;
+    z-index: 3;
+}
+
+#computerFoot1 {
+    position: absolute;
+    width: 50px;
+    height: 130px;
+    background-color: #979797;
+    top: 400px;
+    left: 330px;
+    z-index: 1;
+}
+
+#computerFoot2 {
+    position: absolute;
+    width: 220px;
+    height: 30px;
+    background-color: #979797;
+    top: 530px;
+    left: 245px;
+}
+
+#webcam {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #202020;
+    border-radius: 50%;
+    top: 10px;
+    left: 350px;
+    z-index: 4;
+}
+
+/* Alt av innhold på pcskjerm 
+---------------------------------------------------- */
+#computerScreen {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 650px;
+    height: 400px;
+    z-index: 3;
+}
+
+/* Facebook meny bar 
+---------------------------------------------------- */
+#facebookMenu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 650px;
+    height: 35px;
+    background-color: #4267B2;
+}
+
+#facebookLogo {
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 2.5px;
+}
+
+#facebookF {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: #4267B2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+#searchBar {
+    position: absolute;
+    top: 5px;
+    left: 70px;
+    width: 200px;
+    height: 23px;
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #CECECE;
+    border-radius: 3px;
+    color: grey;
+}
+
+#searchTxt {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#searchIcon {
+    position: absolute;
+    top: 4px;
+    left: 180px;
+    width: 15px;
+    opacity: 0.5;
+}
+
+#fbIcons {
+    position: absolute;
+    top: 5px;
+    left: 350px;
+    width: 280px;
+}
+
+/* Artikkel av Greta 
+---------------------------------------------------- */
+#gretaArticle {
+    position: absolute;
+    top: 45px;
+    left: 40px;
+    width: 250px;
+    height: 350px;
+    background-color: #EAEAEA;
+    border-radius: 5px;
+    border: 1px solid #CECECE;
+}
+
+#gretaImg {
+    position: absolute;
+    width: 250px;
+    border-radius: 5px;
+}
+
+#articleLinkTxt {
+    position: absolute;
+    top: 265px;
+    left: 0px;
+    width: 242px;
+    height: 15px;
+    padding-left: 8px;
+    background-color: #DFDFDF;
+    font-size: 10px;
+    font-family: sans-serif;
+    color: #6D6D6D;
+    border-top: 2px solid #CECECE;
+}
+
+#articleHeading {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    width: 242px;
+    height: 70px;
+    background-color: #DFDFDF;
+    top: 280px;
+    font-size: 30px;
+    padding-left: 8px;
+    margin: 0;
+}
+
+/* Kommentarfelt 
+---------------------------------------------------- */
+.commentSection {
+    position: absolute;
+    top: 45px;
+    left: 300px;
+    width: 340px;
+    height: 350px;
+    background-color: #EAEAEA;
+    border-radius: 5px;
+    border: 1px solid #CECECE;
+}
+
+.facebookName {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #4267B2;
+    font-size: 12px;
+}
+
+.facebookComment {
+    position: relative;
+    width: 300px;
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: #DFDFDF;
+    padding: 10px;
+    border-radius: 15px;
+    left: 8px;
+    border: 1px solid #CECECE;
+    margin-top: 5px;
+    margin-bottom: 1.5em;
+}
+
+.facebookActions {
+    position: relative;
+    top: 25px;
+    font-family: sans-serif;
+    color: #4267B2;
+    font-size: 10px;
+    margin: 0;
+}
+
+.commentMinutes {
+    color: #6D6D6D;
+}
+
+.fbSection {
+    position: absolute;
+    top: 0px;
+    width: 340px;
+    height: 350px;
+    background-color: #EAEAEA;
+}
+
+.jonnyComment{
+    position: absolute;
+    width: 270px;
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: #DFDFDF;
+    padding: 5px;
+    border-radius: 15px;
+    left: 10px;
+    border: 1px solid #CECECE;
+    color: black;
+    bottom: 5px;
+}
+
+#newComment{
+    position: absolute;
+    bottom: 5px;
+    width: 270px;
+    height: 30px;
+    font-family: sans-serif;
+    font-size: 12px;
+    background-color: #DFDFDF;
+    padding: 5px;
+    border-radius: 15px;
+    left: 10px;
+    border: 1px solid #CECECE;
+    color: grey;
+}
+
+.sendButton {
+    position: absolute;
+    margin-left: 305px;
+    top: 298px;
+    font-size: 30px;
+    color: #4267B2;
+
+}
+
+
+/* "Skyld på andre" 
+---------------------------------------------------- */
+#fbSection_1 {
+    display: none;
+}
+
+/* Kveruler 
+---------------------------------------------------- */
+#fbSection_2 {
+    display: none;
+}
+
+/* Snakk nedlatende om ungdommen 
+---------------------------------------------------- */
+#fbSection_3{
+    display: none;
+}
+
+/* Påstå at klimakrisen er en konspirasjon 
+---------------------------------------------------- */
+#fbSection_4 {
+    display: none;
+}
+
+/* Knapper 
+---------------------------------------------------- */
+#buttons {
+    position: absolute;
+    top: 630px;
+    left: 80px;
+    width: 900px;
+    height: 50px;
+}  
+
+#firstButton {
+    position: relative;
+    top: -17px;
+}
+
+#secondButton {
+    position: relative;
+    top: -17px;
+}
+
+#firstButton:hover {
+    transform: scale(1.05);
+}
+
+#secondButton:hover {
+    transform: scale(1.05);
+}
+
+#thirdButton:hover {
+    transform: scale(1.05);
+}
+
+#fourthButton:hover {
+    transform: scale(1.05);
+}
+
+.buttonsClass {
+    font-family: sans-serif;
+    margin-right: 10px;
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-left: 3px solid #B9B9B9;
+    border-bottom: 3px solid #B9B9B9;
+    border-radius: 5px;
+    display: inline-block;
+    color: #696A6C;
+    cursor: pointer;
+}
+
+.buttonsText {
+    position: relative;
+    top: -8px;
+    font-size: 14px;
+}
+
+.commentBtnIcon {
+    position: relative;
+    width: 30px;
+    top: 5px;
+}
+
+#button_1:checked ~ #fbSection_1 {
+    display: block;
+}
+
+#button_2:checked ~ #fbSection_2 {
+    display: block;
+}
+
+#button_3:checked ~ #fbSection_3 {
+    display: block;
+}
+
+#button_4:checked ~ #fbSection_4 {
+    display: block;
+}
